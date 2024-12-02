@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${circularProBook.className} antialiased`}
+        className={`${inter.variable} ${circularProBook.variable} antialiased`}
       >
         {children}
       </body>
