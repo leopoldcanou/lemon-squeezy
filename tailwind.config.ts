@@ -11,6 +11,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "primary-black": "hsl(var(--primary-black))",
+      },
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+        "circular-pro-book": ["var(--font-circular-pro-book)"],
       },
     },
   },
