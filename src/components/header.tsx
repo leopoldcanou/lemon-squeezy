@@ -6,10 +6,10 @@ import { ArrowRight } from "lucide-react";
 export default function Header() {
   return (
     <header className="flex flex-col items-center justify-center bg-[#5423e7] pt-24">
-      <h1 className="font-circular-pro-book w-80 text-[2.75rem] font-light leading-none text-white">
+      <h1 className="w-80 font-circular-pro-book text-[2.75rem] font-light leading-none text-white">
         Payments, tax & subscriptions for software companies
       </h1>
-      <p className="w-80 text-center text-white">
+      <p className="w-80 text-white">
         As your merchant of record, we handle the tax compliance burden so you
         can focus on more revenue and less headache.
       </p>
