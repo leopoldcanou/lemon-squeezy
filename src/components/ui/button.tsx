@@ -13,13 +13,17 @@ export default function Button({
 }: ButtonProps) {
   return (
     <div className="group relative w-fit">
-      {/* Faux bouton (ombre) qui reste en position */}
+      {/* Faux bouton (ombre) */}
       <div
-        className={`absolute inset-0 rounded-[2.5rem] bg-[${secondaryColor}]`}
+        style={{ backgroundColor: secondaryColor }}
+        className="absolute inset-0 rounded-[2.5rem] cursor-pointer"
       ></div>
-      {/* Bouton principal qui se déplace */}
+      {/* Bouton principal */}
       <button
-        className={`relative flex h-[3.75rem] w-auto flex-row items-center justify-start gap-3 rounded-[2.5rem] bg-white px-8 font-inter text-base font-medium tracking-[-0.01rem] text-primary-black transition group-hover:-translate-x-2 group-hover:-translate-y-2 group-hover:bg-[${primaryColor}] md:px-10`}
+        style={{ 
+          "--hover-bg": primaryColor
+        } as React.CSSProperties}
+        className={`relative flex h-[3.75rem] w-auto flex-row items-center justify-start gap-3 rounded-[2.5rem] bg-white px-8 font-inter text-base font-medium tracking-[-0.01rem] text-primary-black transition group-hover:-translate-x-2 group-hover:-translate-y-2 group-hover:bg-[var(--hover-bg)] md:px-10 pointer-events-none`}
       >
         {children}
       </button>
