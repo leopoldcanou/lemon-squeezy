@@ -1,27 +1,12 @@
-import InteractiveFeatures from "@/components/interactiveFeatures";
-import taxCompliance from "../../../public/tax-compliance.jpg";
-import saasPayments from "../../../public/saas-payments.jpg";
-import instantPayment from "../../../public/instant-payment.jpg";
-import currency from "../../../public/currency.jpg";
-import fraud from "../../../public/fraud.jpg";
-import paymentRecovery from "../../../public/payment-recovery.jpg";
-import { Feature } from "@/components/interactiveFeatures";
-import featuresData from "@/app/features.json";
-
-const imageMapping = {
-  taxCompliance,
-  saasPayments,
-  instantPayment,
-  currency,
-  fraud,
-  paymentRecovery,
-};
-
-const features: Feature[] = featuresData.map((feature) => ({
-  ...feature,
-  imageSrc: imageMapping[feature.imageSrc as keyof typeof imageMapping],
-}));
+import DoubleText from "@/components/doubleText";
 
 export default function Page() {
-  return <InteractiveFeatures features={features} />;
+  return (
+    <DoubleText
+      titleColor="#D50B3E"
+      title="ecommerce"
+      text="Create the perfect buying experience for your customers"
+      secondaryText="Launch your secure ecommerce website and start selling software, subscriptions and digital downloads anywhere in minutes. Utilize no-code checkout links without worrying about design, mobile optimization, or payment integrations. It really is easy-peasy."
+    />
+  );
 }
