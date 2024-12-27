@@ -10,7 +10,7 @@ export default function SimpleText({
   text,
 }: simpleTextProps) {
   return (
-    <div className="px-8 py-12 lg:py-40">
+    <div className="px-8 py-12 lg:px-40 lg:py-40">
       <h2
         style={{ color: titleColor }}
         className="pt-2 font-inter text-base font-medium uppercase tracking-[0.125rem]"
