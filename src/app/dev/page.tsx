@@ -1,5 +1,57 @@
-import Header from "@/components/header";
+import InteractiveFeatures from "@/components/interactiveFeatures";
+import taxCompliance from "../../../public/tax-compliance.jpg";
+import saasPayments from "../../../public/saas-payments.jpg";
+import instantPayment from "../../../public/instant-payment.jpg";
+import currency from "../../../public/currency.jpg";
+import fraud from "../../../public/fraud.jpg";
+import paymentRecovery from "../../../public/payment-recovery.jpg";
+import { Feature } from "@/components/interactiveFeatures";
+
+const features: Feature[] = [
+  {
+    id: "01",
+    title: "Global tax compliance",
+    description:
+      "We’re your merchant of record. That means we handle payments, merchant fees, fraud and sales tax without you lifting a finger.",
+    imageSrc: taxCompliance,
+  },
+  {
+    id: "02",
+    title: "Borderless SaaS payments",
+    description:
+      "Instantly sell your digital products around the globe. As your merchant of record, you can accept payments from 135+ countries right out of the box with zero setup.",
+    imageSrc: saasPayments,
+  },
+  {
+    id: "03",
+    title: "Instant payment methods",
+    description:
+      "Our no-code and API solutions support 20+ payment methods, and we offer bank payouts globally.",
+    imageSrc: instantPayment,
+  },
+  {
+    id: "04",
+    title: "Local currency support",
+    description:
+      "Offer your products in your local currency to increase checkout conversions. Lemon Squeezy currency support spans 130+ countries.",
+    imageSrc: currency,
+  },
+  {
+    id: "05",
+    title: "A.I. fraud prevention",
+    description:
+      "Using real-time AI to detect anomalous patterns across signups, logins, refunds, and other actions, Lemon Squeezy protects you from malicious attacks",
+    imageSrc: fraud,
+  },
+  {
+    id: "06",
+    title: "Failed payment recovery",
+    description:
+      "Lemon Squeezy offers a powerful dunning management system to combat involuntary churn from subscriptions, card retries, and customer emails.",
+    imageSrc: paymentRecovery,
+  },
+];
 
 export default function Page() {
-  return <Header />;
+  return <InteractiveFeatures features={features} />;
 }
