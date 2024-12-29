@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import headerTablet from "../../public/header-tablet.jpg";
 import academyLogo from "../../public/academy-logo.png";

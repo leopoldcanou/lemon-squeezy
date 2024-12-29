@@ -1,21 +1,23 @@
+"use client";
+
 import Image, { StaticImageData } from "next/image";
 
 interface doubleImageProps {
-  firstLeft: StaticImageData;
-  firstRight: StaticImageData;
+  leftImage: StaticImageData;
+  rightImage: StaticImageData;
 }
 
 export default function DoubleImage({
-  firstLeft,
-  firstRight,
+  leftImage,
+  rightImage,
 }: doubleImageProps) {
   return (
     <div className="flex flex-row">
       <div className="w-1/2">
-        <Image src={firstLeft} alt="first left image" layout="responsive" />
+        <Image src={leftImage} alt="left image" />
       </div>
       <div className="w-1/2">
-        <Image src={firstRight} alt="first right image" layout="responsive" />
+        <Image src={rightImage} alt="right image" />
       </div>
     </div>
   );

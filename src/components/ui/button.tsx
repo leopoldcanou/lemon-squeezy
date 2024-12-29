@@ -1,3 +1,5 @@
+"use client";
+
 import { ReactNode } from "react";
 
 interface ButtonProps {
@@ -16,14 +18,16 @@ export default function Button({
       {/* Faux bouton (ombre) */}
       <div
         style={{ backgroundColor: secondaryColor }}
-        className="absolute inset-0 rounded-[2.5rem] cursor-pointer"
+        className="absolute inset-0 cursor-pointer rounded-[2.5rem]"
       ></div>
       {/* Bouton principal */}
       <button
-        style={{ 
-          "--hover-bg": primaryColor
-        } as React.CSSProperties}
-        className={`relative flex h-[3.75rem] w-auto flex-row items-center justify-start gap-3 rounded-[2.5rem] bg-white px-8 font-inter text-base font-medium tracking-[-0.01rem] text-primary-black transition group-hover:-translate-x-2 group-hover:-translate-y-2 group-hover:bg-[var(--hover-bg)] md:px-10 pointer-events-none`}
+        style={
+          {
+            "--hover-bg": primaryColor,
+          } as React.CSSProperties
+        }
+        className={`pointer-events-none relative flex h-[3.75rem] w-auto flex-row items-center justify-start gap-3 rounded-[2.5rem] bg-white px-8 font-inter text-base font-medium tracking-[-0.01rem] text-primary-black transition group-hover:-translate-x-2 group-hover:-translate-y-2 group-hover:bg-[var(--hover-bg)] md:px-10`}
       >
         {children}
       </button>

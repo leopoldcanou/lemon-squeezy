@@ -1,3 +1,5 @@
+"use client";
+
 interface simpleTextProps {
   titleColor: string;
   title: string;
