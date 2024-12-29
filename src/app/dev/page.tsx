@@ -1,5 +1,5 @@
 import FeatureGrid, { FeatureGridInterface } from "@/components/featuresGrid";
-import featuresGridData from "@/app/FeaturesGrid.json";
+import featuresGridData from "@/app/firstFeaturesGrid.json";
 
 const features: FeatureGridInterface[] = featuresGridData;
 
