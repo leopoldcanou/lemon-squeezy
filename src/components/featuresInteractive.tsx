@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import { ArrowRight } from "lucide-react";
 
-export interface Feature {
+export interface FeatureInteractiveInterface {
   id: string;
   title: string;
   description: string;
@@ -12,16 +12,17 @@ export interface Feature {
 }
 
 interface InteractiveFeaturesProps {
-  features: Feature[];
+  features: FeatureInteractiveInterface[];
 }
 
 export default function InteractiveFeatures({
   features,
 }: InteractiveFeaturesProps) {
-  const [selectedFeature, setSelectedFeature] = useState<Feature>(features[0]);
+  const [selectedFeature, setSelectedFeature] =
+    useState<FeatureInteractiveInterface>(features[0]);
   const [openFeatureId, setOpenFeatureId] = useState<string | null>(null);
 
-  const handleFeatureClick = (feature: Feature) => {
+  const handleFeatureClick = (feature: FeatureInteractiveInterface) => {
     if (selectedFeature.id !== feature.id) {
       setSelectedFeature(feature);
       setOpenFeatureId(feature.id);
