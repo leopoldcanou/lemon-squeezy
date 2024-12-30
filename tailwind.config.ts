@@ -15,7 +15,12 @@ export default {
       },
       fontFamily: {
         inter: ["var(--font-inter)"],
-        "circular-pro-book": ["var(--font-circular-pro-book)"],
+        "circular-pro-book": [
+          "var(--font-circular-pro-book)",
+          {
+            fontFeatureSettings: "'ss04'",
+          },
+        ],
       },
     },
   },

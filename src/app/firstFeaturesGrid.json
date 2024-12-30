@@ -1,0 +1,32 @@
+[
+    {
+      "id": "E/1",
+      "title": "Accept online payments",
+      "description": "Don't worry about merchant accounts and billing logic. Choose per seat, usage-based and more. Customize as little or as much as you like."
+    },
+    {
+      "id": "E/2",
+      "title": "Recurring billing + subscriptions",
+      "description": "Charge customers on a weekly, monthly, or yearly basis. Manage upgrades, downgrades, and cancels. Offer free trials, discounts, and more."
+    },
+    {
+      "id": "E/3",
+      "title": "License key management",
+      "description": "Automatically issue license keys for your software and apps after each sale. Deactivate, re-issue, and have full control over license management."
+    },
+    {
+      "id": "E/4",
+      "title": "Sell digital downloads",
+      "description": "Anyone can provide download links, but what about security and abuse? Your download links are securely signed, throttled, and more."
+    },
+    {
+      "id": "E/5",
+      "title": "No-code checkout forms",
+      "description": "No matter what you use for your website, you can embed your checkout or share your unique checkout links and sell anywhere."
+    },
+    {
+      "id": "E/6",
+      "title": "Launch your ecommerce store",
+      "description": "Build an ecommerce website in minutes without coding or design skills. Customizable, SSL secured and mobile-optimized as standard."
+    }
+]
