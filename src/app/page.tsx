@@ -18,6 +18,15 @@ import erenT from "../../public/avatar-eren.jpeg";
 import shahadatRahman from "../../public/avatar-shahadat.jpeg";
 import jamesMcDonald from "../../public/jamesmcdonald.jpg";
 
+import iconic from "../../public/iconic.png";
+import figma from "../../public/figma.jpg";
+import webhooks from "../../public/webhooks.png";
+import api from "../../public/api.png";
+import book from "../../public/book.jpg";
+import book2 from "../../public/book2.jpg";
+import tshirt from "../../public/tshirt.jpg";
+import needHelp from "../../public/needHelp.jpg";
+
 import Header from "@/components/header";
 import SimpleText from "@/components/simpleText";
 import InteractiveFeatures, {
@@ -34,6 +43,8 @@ import TestimonialsGrid, {
   TestimonialInterface,
 } from "@/components/testimonialGrid";
 import testimonialsData from "@/app/testimonials.json";
+import TextPicture from "@/components/textPicture";
+import Footer from "@/components/footer";
 
 const imageMapping = {
   taxCompliance,
@@ -139,7 +150,127 @@ export default function Home() {
         backgroundColor="#000000"
         darkMode
       />
+      <TextPicture
+        title="D/1"
+        text="Powerful, flexible API + Webhooks"
+        buttonText="Explore the API"
+        titleColor="#CF75FF"
+        backgroundColor="#000000"
+        buttonPrimaryColor="#CF75FF"
+        buttonHoverColor="#CF75FF"
+        buttonSecondaryColor="#CF75FF80"
+        image={webhooks}
+        imageReverse
+        darkMode
+      />
+      <TextPicture
+        title="D/1"
+        text="Documentation so good you’ll cry"
+        buttonText="Read the docs"
+        titleColor="#CF75FF"
+        backgroundColor="#000000"
+        buttonPrimaryColor="#CF75FF"
+        buttonHoverColor="#CF75FF"
+        buttonSecondaryColor="#CF75FF80"
+        image={api}
+        darkMode
+      />
+      <DoubleText
+        titleColor="#EB3A00"
+        title="community"
+        text="You’re in good company"
+        secondaryText="Lemon Squeezy is the heartbeat for your business. Join thousands of successful startups, software companies, and digital creators using our platform. Become part of a growing community of innovative thinkers, makers, movers, and shakers — you're in good company here."
+        backgroundColor="#F7F7F8"
+      />
       <TestimonialsGrid testimonials={testimonials} />
+      <TextPicture
+        title="C/1"
+        text="How Iconic uses Lemon Squeezy to power software licensing + subscriptions"
+        buttonText="Read the case study"
+        titleColor="#EB3A00"
+        backgroundColor="#FFFFFF"
+        buttonPrimaryColor="#FF571F"
+        buttonHoverColor="#FF571F"
+        buttonSecondaryColor="#FF571F26"
+        image={iconic}
+      />
+      <TextPicture
+        title="C/2"
+        text="How Figma Academy used Lemon Squeezy to earn $300k with a Figma course"
+        buttonText="Read the case study"
+        titleColor="#EB3A00"
+        backgroundColor="#FFFFFF"
+        buttonPrimaryColor="#FF571F"
+        buttonHoverColor="#FF571F"
+        buttonSecondaryColor="#FF571F26"
+        image={figma}
+        imageReverse
+      />
+      <DoubleText
+        titleColor="#DB0BB9"
+        title="support"
+        text="Whatever stage of your journey, we’re here to help"
+        secondaryText="No matter the stage of your company, we stand behind our promise to provide exceptional customer support, from initial setups to massive migrations and everything in between. Invest in your business with peace of mind that we're here for you whether you need technical help or business advice."
+        backgroundColor="#FEECFB"
+      />
+      <TextPicture
+        title="S/1"
+        text="Creator Guide"
+        buttonText="Download"
+        titleColor="#DB0BB9"
+        backgroundColor="#FEECFB"
+        buttonPrimaryColor="#FFFFFF"
+        buttonHoverColor="#FFFFFF"
+        buttonSecondaryColor="#FFFFFF"
+        image={book}
+        imageReverse
+      />
+      <TextPicture
+        title="S/2"
+        text="Merchant of Record Guide"
+        buttonText="Download"
+        titleColor="#DB0BB9"
+        backgroundColor="#FEECFB"
+        buttonPrimaryColor="#FFFFFF"
+        buttonHoverColor="#FFFFFF"
+        buttonSecondaryColor="#FFFFFF"
+        image={book2}
+        imageReverse
+      />
+      <TextPicture
+        title="S/3"
+        text="Want merch?"
+        buttonText="Get on the list"
+        titleColor="#DB0BB9"
+        backgroundColor="#FEECFB"
+        buttonPrimaryColor="#FFFFFF"
+        buttonHoverColor="#FFFFFF"
+        buttonSecondaryColor="#FFFFFF"
+        image={tshirt}
+        imageReverse
+      />
+      <TextPicture
+        title="S/4"
+        text="Need help?"
+        buttonText="Help center"
+        titleColor="#DB0BB9"
+        backgroundColor="#FEECFB"
+        buttonPrimaryColor="#FFFFFF"
+        buttonHoverColor="#FFFFFF"
+        buttonSecondaryColor="#FFFFFF"
+        image={needHelp}
+        imageReverse
+      />
+      <Footer
+        title="ELEVATE YOUR BUSINESS"
+        text="Take your business to the next level with Lemon Squeezy"
+        buttonText="Get started for free"
+        titleColor="#FFC233"
+        backgroundColor="#5423E6"
+        buttonPrimaryColor="#FFFFFF"
+        buttonHoverColor="#FFC233"
+        buttonSecondaryColor="#FFD266"
+      />
     </>
   );
 }

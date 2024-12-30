@@ -20,7 +20,11 @@ export default function Header() {
             As your merchant of record, we handle the tax compliance burden so
             you can focus on more revenue and less headache.
           </p>
-          <Button primaryColor="#ffc233" secondaryColor="#ffd266">
+          <Button
+            primaryColor="#FFFFFF"
+            hoverColor="#FFC233"
+            secondaryColor="#FFD266"
+          >
             Get started for free
             <ArrowRight
               className="transition-transform group-hover:translate-x-2"
