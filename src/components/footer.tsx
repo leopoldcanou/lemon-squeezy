@@ -108,7 +108,7 @@ export default function Footer({
                   href="#"
                   className="block text-[#FFFFFF99] transition-colors hover:text-white"
                 >
-                  Creators' Guide
+                  Creators`&apos;` Guide
                 </Link>
                 <Link
                   href="#"
