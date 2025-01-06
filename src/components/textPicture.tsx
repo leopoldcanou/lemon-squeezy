@@ -1,6 +1,8 @@
+"use client";
+
 import Button from "@/components/ui/button";
 import Image, { StaticImageData } from "next/image";
-
+import { motion } from "motion/react"
 interface TextPictureProps {
   title: string;
   text: string;
@@ -29,7 +31,13 @@ export default function TextPicture({
   darkMode,
 }: TextPictureProps) {
   return (
-    <div className="flex">
+    <motion.div
+      className="flex"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ type: "spring", stiffness: 50, damping: 10, duration: 0.8 }}
+      viewport={{ once: true }}
+    >
       {imageReverse === true ? (
         <div className="hidden w-1/2 flex-1 md:block">
           <Image
@@ -39,7 +47,13 @@ export default function TextPicture({
           />
         </div>
       ) : null}
-      <div className="w-1/2 flex-1">
+      <motion.div
+        className="w-1/2 flex-1"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ type: "spring", stiffness: 50, damping: 10, duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         <div
           className="flex h-full flex-col justify-center p-8 md:p-24"
           style={{ backgroundColor }}
@@ -65,7 +79,7 @@ export default function TextPicture({
             <span className="ml-2">→</span>
           </Button>
         </div>
-      </div>
+      </motion.div>
       {imageReverse === false ? (
         <div className="hidden w-1/2 flex-1 md:block">
           <Image
@@ -75,6 +89,6 @@ export default function TextPicture({
           />
         </div>
       ) : null}
-    </div>
+    </motion.div>
   );
 }

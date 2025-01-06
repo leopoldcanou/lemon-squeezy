@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { motion } from "motion/react"
 
 export interface FeatureGridInterface {
   id: string;
@@ -22,9 +23,13 @@ export default function FeatureGrid({
   features,
 }: FeaturesGridProps) {
   return (
-    <div
+    <motion.div
       className="flex justify-center px-8 py-24 lg:px-16 xl:px-24"
       style={{ backgroundColor }}
+      initial={{ y: 70, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ type: "spring", stiffness: 50, damping: 10, duration: 0.8 }}
+      viewport={{ once: true }}
     >
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {features.map((feature) => (
@@ -59,6 +64,6 @@ export default function FeatureGrid({
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
