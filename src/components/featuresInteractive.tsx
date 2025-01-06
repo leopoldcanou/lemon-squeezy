@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import { ArrowRight } from "lucide-react";
+import { motion } from "motion/react"
 
 export interface FeatureInteractiveInterface {
   id: string;
@@ -72,7 +73,10 @@ export default function InteractiveFeatures({
         </div>
         <div className="relative h-[900px]">
           <div className="sticky top-6 h-full">
-            <div className="relative h-full w-full overflow-hidden">
+            <motion.div className="relative h-full w-full overflow-hidden"             initial={{ y: 70, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ type: "spring", stiffness: 50, damping: 10, duration: 0.8 }}
+            viewport={{ once: true }}>
               <Image
                 src={selectedFeature.imageSrc}
                 alt={selectedFeature.title}
@@ -81,7 +85,7 @@ export default function InteractiveFeatures({
                 className="object-cover transition-opacity duration-300 ease-in-out"
                 priority
               />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
