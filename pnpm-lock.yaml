@@ -13,11 +13,11 @@ importers:
   .:
     dependencies:
       lucide-react:
-        specifier: ^0.469.0
-        version: 0.469.0(react@19.2.1)
+        specifier: ^0.559.0
+        version: 0.559.0(react@19.2.1)
       motion:
-        specifier: ^11.18.2
-        version: 11.18.2(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+        specifier: ^12.23.26
+        version: 12.23.26(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
       next:
         specifier: 16.0.8
         version: 16.0.8(@babel/core@7.28.5)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
@@ -1107,8 +1107,8 @@ packages:
     resolution: {integrity: sha512-dKx12eRCVIzqCxFGplyFKJMPvLEWgmNtUrpTiJIR5u97zEhRG8ySrtboPHZXx7daLxQVrl643cTzbab2tkQjxg==}
     engines: {node: '>= 0.4'}
 
-  framer-motion@11.18.2:
-    resolution: {integrity: sha512-5F5Och7wrvtLVElIpclDT0CBzMVg3dL22B64aZwHtsIY8RB4mXICLrkajK4G9R+ieSAGcgrLeae2SeUTg2pr6w==}
+  framer-motion@12.23.26:
+    resolution: {integrity: sha512-cPcIhgR42xBn1Uj+PzOyheMtZ73H927+uWPDVhUMqxy8UHt6Okavb6xIz9J/phFUHUj0OncR6UvMfJTXoc/LKA==}
     peerDependencies:
       '@emotion/is-prop-valid': '*'
       react: ^18.0.0 || ^19.0.0
@@ -1483,8 +1483,8 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
-  lucide-react@0.469.0:
-    resolution: {integrity: sha512-28vvUnnKQ/dBwiCQtwJw7QauYnE7yd2Cyp4tTTJpvglX4EMpbflcdBgrgToX2j71B3YvugK/NH3BGUk+E/p/Fw==}
+  lucide-react@0.559.0:
+    resolution: {integrity: sha512-3ymrkBPXWk3U2bwUDg6TdA6hP5iGDMgPEAMLhchEgTQmA+g0Zk24tOtKtXMx35w1PizTmsBC3RhP88QYm+7mHQ==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
@@ -1513,14 +1513,14 @@ packages:
   minimist@1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
 
-  motion-dom@11.18.1:
-    resolution: {integrity: sha512-g76KvA001z+atjfxczdRtw/RXOM3OMSdd1f4DL77qCTF/+avrRJiawSG4yDibEQ215sr9kpinSlX2pCTJ9zbhw==}
+  motion-dom@12.23.23:
+    resolution: {integrity: sha512-n5yolOs0TQQBRUFImrRfs/+6X4p3Q4n1dUEqt/H58Vx7OW6RF+foWEgmTVDhIWJIMXOuNNL0apKH2S16en9eiA==}
 
-  motion-utils@11.18.1:
-    resolution: {integrity: sha512-49Kt+HKjtbJKLtgO/LKj9Ld+6vw9BjH5d9sc40R/kVyH8GLAXgT42M2NnuPcJNuA3s9ZfZBUcwIgpmZWGEE+hA==}
+  motion-utils@12.23.6:
+    resolution: {integrity: sha512-eAWoPgr4eFEOFfg2WjIsMoqJTW6Z8MTUCgn/GZ3VRpClWBdnbjryiA3ZSNLyxCTmCQx4RmYX6jX1iWHbenUPNQ==}
 
-  motion@11.18.2:
-    resolution: {integrity: sha512-JLjvFDuFr42NFtcVoMAyC2sEjnpA8xpy6qWPyzQvCloznAyQ8FIXioxWfHiLtgYhoVpfUqSWpn1h9++skj9+Wg==}
+  motion@12.23.26:
+    resolution: {integrity: sha512-Ll8XhVxY8LXMVYTCfme27WH2GjBrCIzY4+ndr5QKxsK+YwCtOi2B/oBi5jcIbik5doXuWT/4KKDOVAZJkeY5VQ==}
     peerDependencies:
       '@emotion/is-prop-valid': '*'
       react: ^18.0.0 || ^19.0.0
@@ -3202,10 +3202,10 @@ snapshots:
     dependencies:
       is-callable: 1.2.7
 
-  framer-motion@11.18.2(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
+  framer-motion@12.23.26(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
     dependencies:
-      motion-dom: 11.18.1
-      motion-utils: 11.18.1
+      motion-dom: 12.23.23
+      motion-utils: 12.23.6
       tslib: 2.8.1
     optionalDependencies:
       react: 19.2.1
@@ -3554,7 +3554,7 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
-  lucide-react@0.469.0(react@19.2.1):
+  lucide-react@0.559.0(react@19.2.1):
     dependencies:
       react: 19.2.1
 
@@ -3581,15 +3581,15 @@ snapshots:
 
   minimist@1.2.8: {}
 
-  motion-dom@11.18.1:
+  motion-dom@12.23.23:
     dependencies:
-      motion-utils: 11.18.1
+      motion-utils: 12.23.6
 
-  motion-utils@11.18.1: {}
+  motion-utils@12.23.6: {}
 
-  motion@11.18.2(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
+  motion@12.23.26(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
     dependencies:
-      framer-motion: 11.18.2(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+      framer-motion: 12.23.26(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
       tslib: 2.8.1
     optionalDependencies:
       react: 19.2.1
