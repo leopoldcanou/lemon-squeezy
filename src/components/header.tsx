@@ -15,7 +15,7 @@ export default function Header() {
       <div className="relative flex w-full flex-col md:flex-row">
         <div className="relative z-10 flex flex-col items-start justify-center gap-8 px-8 md:w-1/2">
           <motion.h1
-            className="w-80 font-circular-pro-book text-[2.75rem] font-light leading-none text-white md:w-[27.5rem] md:text-5xl lg:w-[35rem] lg:text-[5rem]"
+            className="w-80 font-circular-pro-book text-[2.75rem] font-light leading-none text-white md:w-110 md:text-5xl lg:w-140 lg:text-[5rem]"
             initial={{ y: 70, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ type: "spring", stiffness: 50, damping: 10, duration: 0.8 }}
