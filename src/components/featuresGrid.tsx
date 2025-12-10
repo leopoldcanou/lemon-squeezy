@@ -35,7 +35,7 @@ export default function FeatureGrid({
         {features.map((feature) => (
           <div
             key={feature.id}
-            className="flex w-full flex-col rounded-lg p-12 transition-all md:w-[27rem]"
+            className="flex w-full flex-col rounded-lg p-12 transition-all md:w-108"
             style={{
               backgroundColor: backgroundColor,
               transition: "background-color 0.3s",

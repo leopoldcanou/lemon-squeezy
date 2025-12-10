@@ -38,7 +38,7 @@ export default function InteractiveFeatures({
             {features.map((feature) => (
               <div
                 key={feature.id}
-                className="rounded-t-lg border-b-[1px] border-[#D1D1DB] hover:bg-[#F7F7F8]"
+                className="rounded-t-lg border-b border-[#D1D1DB] hover:bg-[#F7F7F8]"
               >
                 <button
                   onClick={() => handleFeatureClick(feature)}

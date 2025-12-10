@@ -33,7 +33,7 @@ export default function Button({
         style={{
           backgroundColor: currentColor,
         }}
-        className={`relative flex h-[3.75rem] w-auto flex-row items-center justify-start gap-3 rounded-[2.5rem] px-8 font-inter text-base font-medium tracking-[-0.01rem] text-primary-black transition group-hover:-translate-x-2 group-hover:-translate-y-2 md:px-10`}
+        className={`relative flex h-15 w-auto flex-row items-center justify-start gap-3 rounded-[2.5rem] px-8 font-inter text-base font-medium tracking-[-0.01rem] text-primary-black transition group-hover:-translate-x-2 group-hover:-translate-y-2 md:px-10`}
       >
         {children}
       </button>
