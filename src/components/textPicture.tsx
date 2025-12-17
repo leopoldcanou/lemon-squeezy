@@ -2,7 +2,7 @@
 
 import Button from "@/components/ui/button";
 import Image, { StaticImageData } from "next/image";
-import { motion } from "motion/react"
+import { motion } from "motion/react";
 interface TextPictureProps {
   title: string;
   text: string;
@@ -44,6 +44,7 @@ export default function TextPicture({
             src={image}
             alt="Image"
             className="h-full w-full object-cover"
+            style={{ backgroundColor: darkMode ? "#000000" : "#FFFFFF" }}
           />
         </div>
       ) : null}
@@ -51,7 +52,12 @@ export default function TextPicture({
         className="w-1/2 flex-1"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ type: "spring", stiffness: 50, damping: 10, duration: 0.8 }}
+        transition={{
+          type: "spring",
+          stiffness: 50,
+          damping: 10,
+          duration: 0.8,
+        }}
         viewport={{ once: true }}
       >
         <div
@@ -59,13 +65,13 @@ export default function TextPicture({
           style={{ backgroundColor }}
         >
           <p
-            className="mb-4 font-inter text-sm font-medium"
+            className="font-inter mb-4 text-sm font-medium"
             style={{ color: titleColor }}
           >
             {title}
           </p>
           <h2
-            className="mb-8 font-circular-pro-book text-4xl leading-[1.22]"
+            className="font-circular-pro-book mb-8 text-4xl leading-[1.22]"
             style={{ color: darkMode ? "#FFFFFF" : "#000000" }}
           >
             {text}
@@ -86,6 +92,7 @@ export default function TextPicture({
             src={image}
             alt="Image"
             className="h-full w-full object-cover"
+            style={{ backgroundColor: darkMode ? "#000000" : "#FFFFFF" }}
           />
         </div>
       ) : null}
